@@ -1,0 +1,26 @@
+{
+  "name": "cocktailmaker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayjlou/CocktailMaker.git"
+  },
+  "author": "Kayjlou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayjlou/CocktailMaker/issues"
+  },
+  "homepage": "https://github.com/kayjlou/CocktailMaker#readme"
+}

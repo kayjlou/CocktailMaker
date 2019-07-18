@@ -8,5 +8,5 @@ module.exports = (Schema, model) => {
       default: false
     }
   })
-  return model('Recipes', Recipe)
+  return model('Recipes', Recipes)
 }

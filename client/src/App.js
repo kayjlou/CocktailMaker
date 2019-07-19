@@ -3,23 +3,37 @@ import logo from './logo.svg';
 import './App.css';
 import Cards from './components/Cards'
 import SearchBar from './components/SearchBar'
+import Recipes from './components/assets/Utils/recipes.js'
 
 
 class App extends Component {
   state = {
     ingredient: '',
-    name: '',
+    name: 'margarita',
     favorites: []
 
   }
 
-  handleSearchSubmit = () => {
-    console.log('running search')
+  handleNameSearch = () => {
+    console.log('running name search')
+    Recipes.getByName(this.state.name)
   }
+  handleIngredientSearch = () => {
+    console.log('running ingredient search')
+    Recipes.getByIngredient()
+  }
+  handleRandomSearch = () => {
+    console.log('random search')
+    Recipes.getRandom()
+  }
+
+
   render() {
     return (
       <>
-        <SearchBar handleSearchSubmit={this.handleSearchSubmit} />
+        <SearchBar handleIngredientSearch={this.handleIngredientSearch}
+          handleNameSearch={this.handleNameSearch}
+          handleRandomSearch={this.handleRandomSearch} />
         <Cards />
       </>
 

@@ -22,7 +22,7 @@ module.exports = app => {
   //Get a random cocktail
   app.get('/random', (req, res) => {
     axios.get(`https://www.thecocktaildb.com/api/json/v1/1/random.php`)
-      .then(({ data }) => console.log(data))
+      .then(({ data }) => res.json(data))
       .catch(e => console.log(`ERROR IS ---------- ${e}`))
   })
 

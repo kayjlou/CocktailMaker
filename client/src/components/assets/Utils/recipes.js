@@ -3,7 +3,8 @@ import axios from 'axios'
 const Recipes = {
 
   //Search by random
-  getRandom: () => axios.get('/random'),
+  getRandom: () => axios.get('/random')
+  ,
 
   getByName: (name) =>
     axios.get(`/search/${name}`),
